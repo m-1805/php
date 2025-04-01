@@ -10,3 +10,15 @@ CREATE TABLE IF NOT EXISTS student (
     address VARCHAR(255) NOT NULL,
     mobile VARCHAR(15) NOT NULL
 );
+
+pro 9 sql :
+
+CREATE DATABASE login;
+
+USE login;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
