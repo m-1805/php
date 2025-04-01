@@ -22,3 +22,19 @@ CREATE TABLE users (
     username VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
 );
+
+pro 10 sql:
+
+CREATE DATABASE employee;
+
+USE employee;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    phone VARCHAR(20) NOT NULL,
+    address TEXT NOT NULL,
+    position VARCHAR(100) NOT NULL
+);
+
