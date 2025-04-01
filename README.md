@@ -1,0 +1,10 @@
+pro 8 sql :
+
+CREATE DATABASE IF NOT EXISTS dbcrud;
+USE dbcrud;
+CREATE TABLE IF NOT EXISTS student (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    mobile VARCHAR(15) NOT NULL
+);
