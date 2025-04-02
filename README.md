@@ -38,3 +38,19 @@ CREATE TABLE users (
     position VARCHAR(100) NOT NULL
 );
 
+pro 11 sql :
+
+CREATE DATABASE IF NOT EXISTS FruitsDb;
+
+USE FruitsDb;
+
+CREATE TABLE IF NOT EXISTS items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL
+);
+
+INSERT INTO items (name) VALUES 
+('Apple'),
+('Banana'),
+('Carrot'),
+('Spinach');
